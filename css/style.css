@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+}
+body{
+    background-color: #ddd;
+    margin: 0;
+    background: url(../img/body-Bg.png);
+}
+h2{
+    font-family: 'Yeseva One', cursive;
+    color:  #cc9900;
+    font-size: 36px;/* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px;/* Approximation causée par une substitution de police */
+}
+p{
+    font-family: 'Lato', sans-serif;
+    color:  #4c4c4c;
+    font-size: 16px;/* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px;
+}
+/**********************
+******** HEADER ***********
+**********************/
+header{
+    background: url(../img/Bg.png);
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 142px;
+}
+nav{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    padding: 0;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 50px 20px;
+    text-transform: capitalize;
+    font-size: 21px;
+    font-family: 'Gentium Book Basic', serif;
+}
+#socials a{
+    color:  #dab33e;
+    padding: 20px;  
+    text-shadow: rgba(255,255,255,0.6) 5px 5px;
+}
+header h1{
+    font-family: 'Yeseva One', cursive;
+    color: #ffffff;
+    font-size: 90px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+    width: 1000px;
+    margin: 322px auto 35px;
+}
+.separator {
+    margin-bottom: 34px;
+}
+.btn-noir, .btn-blanc{
+    border-width: 1px;
+    border-color:  #000000;
+    border-style: solid;
+    background-color:  rgba(0, 0, 0, 0.7);
+    padding: 20px 50px ;
+    font-family: 'Lato', sans-serif;
+    color:  #ffffff;
+    font-size: 18px;/* Approximation causée par une substitution de police */
+    font-weight: 400;
+    text-align: center;
+}
+.btn-blanc{
+    border-color:  #ffffff;
+    border-style: solid;
+    background-color:  rgba(255, 255, 255, 0.28);
+}
+/**********************
+******** ABOUT ***********
+**********************/
+#about{
+    width: 1066px;
+    margin: auto;
+    display: flex;
+    padding-top: 106px;
+    padding-bottom: 30px;
+}
+#about>img{
+    width: 621px;
+    height: 625px;
+}
+#about article{
+    width: 410px;
+    text-align: center
+}
+#about h2{
+    color:  #cc9900;
+    text-align: center;
+    margin: 15px;
+}
+#about p{
+    margin: 0;
+    padding: 0;
+    color:  #4c4c4c;
+}
+#about article p+img{
+    padding-top: 52px;
+    width: 219px;
+    height: 221px;
+}
+/**********************
+******** ingredients ***********
+**********************/
+#ingredients{
+    background: url(../img/ingredient.png);
+    padding: 50px;
+}
+#ingredients article{
+    width: 1000px;
+    margin: auto;
+    border-width: 0.060000000000000005px;
+    border-color:  #fbf7c0;
+    border-style: solid;
+    background-color:  rgba(0,0,0,0.67);
+    width: 570px;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    padding: 80px;
+}
+#ingredients article h2{
+    color:  #ffffff;
+}
+#ingredients article ul{
+    margin-top: 76px;
+    display:flex;
+    justify-content: space-between;
+}
+#ingredients p {
+    color: white;
+}
+/**********************
+******** menu ***********
+**********************/
+#menu{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px
+}
+#menu section{
+    width: 45%;
+    margin-bottom: 55px;
+}
+.ligne-prix .plat, .ligne-prix .prix{
+    font-family: 'Yeseva One', cursive;
+    color: #c89f2d;
+    font-size: 21px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: justify;
+}
+.ligne-prix{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #c89f2d;
+}
+#menu p{
+    text-align: left;
+}
+/**********************
+******** review ***********
+**********************/
+#reviews{
+    background: url(../img/brochette.png);
+    padding: 45px;
+}
+#reviews article{
+    width: 770px;
+    padding: 80px;
+    margin: auto;
+    background-color:  rgba(0,0,0,0.67);
+    text-align: center;
+    color: white; 
+}
+#reviews blockquote{
+    font-family: 'Gentium Book Basic', serif;
+    color: #dee0e0;
+    font-size: 25px; /* Approximation causée par une substitution de police */
+    font-weight: 700;
+    line-height: 45px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+#reviews blockquote::before{
+    font-family: serif;
+    content: "“";
+    color:white;
+    font-size: 72px;
+}
+#reviews p {
+    font-family: Lato;
+    color: #ffffff;
+    font-size: 18px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 45px; /* Approximation causée par une substitution de police */
+    text-align: center;
+}
+/**********************
+******** reservations ***********
+**********************/
+#reservations{
+    width: 1300px;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#reservations article{
+    width: 430px;
+}
+#reservations form section{
+    display: flex;
+    margin-bottom: 56px;
+}
+#reservations form section label{
+    display: block;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color:  #c9a131;
+    font-size: 14px;/* Approximation causée par une substitution de police */
+    font-weight: 700;
+}
+#reservations form section input {
+    border-width: 1px;
+    border-color:  #c89f2d;
+    border-style: solid;
+    background-color:  rgba(255, 255, 255, 0.4);
+    width: 198px;
+    height: 34px;
+    padding: 10px;
+}
+#reservations input[type="submit"]{
+    border-width: 1px;
+    border-color:  #c89f2d;
+    border-style: solid;
+    background-color:  rgba(200, 159, 45, 0.98);
+    width: 198px;
+    height: 34px;
+    color: white;
+    
+    font-family: 'Open Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 16px;/* Approximation causée par une substitution de police */
+    font-weight: 400;
+    text-align: center;
+}
+/**********************
+******** footer ***********
+**********************/
+footer{
+    background-color:  #191919;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+footer section{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto
+}
+footer section article:nth-child(1){
+    width: 350px;
+}
+footer section article:nth-child(2){
+    width: 200px;
+}
+footer section article:nth-child(3){
+    width: 200px;
+}
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 16px; /* Approximation causée par une substitution de police */
+    font-weight: 400;
+    line-height: 24px; /* Approximation causée par une substitution de police */
+    text-align: center;
+    font-family: OpenSans;
+}
